@@ -1,6 +1,7 @@
 'use client';
 import React, { useState, useEffect, MouseEvent } from 'react';
 import styles from './styles/page.module.scss';
+import Paragraph from './components/Paragraph';
 
 interface HomeProps {}
 
@@ -35,14 +36,14 @@ const Home: React.FC<HomeProps> = () => {
     el.style.backgroundColor = '#FEFCE8';
 
     setTimeout(() => {
-      el.style.backgroundColor = 'transparent'
+      el.style.backgroundColor = 'transparent';
     }, 300);
   };
 
   return (
     <div className={styles.container}>
       <div className={styles.body}>
-        <p>The Web is a beautiful place</p>
+        <Paragraph />
       </div>
       <div className={styles.grid}>
         {windowsWidth > 0 &&

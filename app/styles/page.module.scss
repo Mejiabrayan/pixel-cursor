@@ -6,7 +6,8 @@
     background-color: #100F13;
     
     .body {
-        font-size: 6vw;
+       
+        font-size: clamp(6vh, 10vw, 10vh);
         text-align: center;
         font-weight: 700;
         width: 70%;
